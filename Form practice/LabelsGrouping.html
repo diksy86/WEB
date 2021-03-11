@@ -1,0 +1,122 @@
+<!--Labels/Grouping
+● Creates a form used for catering reservations
+
+● The form contains multiple elements split into groups
+● Each element should have a label assigned to it
+First group
+● Name of the group should be &quot;Personal data&quot;
+● The first field is for the name
+● The second one is for the email address
+● The third is for the phone number
+Second group
+● Name of the group should be &quot;Location&quot;
+● It should contain fields for:
+○ City
+○ Street
+○ Street number
+
+Third group
+● Name of the group should be &quot;Event info&quot;
+● The first element is dropdown containing the following options:
+○ birthday
+○ wedding (should be selected by default)
+○ company
+● The second element is for getting number of expected guests and it’s
+an input type element
+● Placeholder is a number you choose-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering reservations</title>
+    <style>
+        .form-field {
+            margin-bottom: 15px;
+        }
+        .form-field label {
+            width: 140px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        fieldset {
+            padding-top: 15px;
+        }
+        .form-field input {
+            width: 177px;
+        }
+        .form-buttons {
+            text-align: center;
+            padding: 15px;
+        }
+        .form-buttons button {
+            padding: 10px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div style="max-width: 600px; margin: 0 auto;">
+        <form>
+        <fieldset>
+            <legend>Personal Data</legend>
+            <div class="form-field">
+                <label for="name">
+                    Name
+                </label>
+                <input type="text" id="name" name="name">
+            </div>
+            
+            <div class="form-field">
+                <label for="email">
+                    Email Address
+                </label>
+                <input type="email" id="email" name="email">
+            </div>
+            
+            <div class="form-field">
+                <label for="phone">
+                    Phone Number
+                </label>
+                <input type="number" id="phone" name="number">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Location</legend>
+
+            <div class="form-field">
+                <label for="city">City</label>
+            <input type="text" id="city" name="city">
+            </div>
+            
+            <div class="form-field">
+                <label for="street">Street</label>
+            <input type="text" id="street" name="street">
+            </div>
+            
+            <div class="form-field">
+                <label for="stNum">Street Number</label>
+            <input type="number" id="stNum" name="stNumber">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Event</legend>
+            <select name="event">
+                <option value="birthday">Birthday</option>
+                <option value="wedding" selected="selected">Wedding</option>
+                <option value="company">Company</option>
+            </select>
+            <label for="guests" style="margin-left: 60px;">
+            Number of guests:</label>
+            <input type="number" id="guests" placeholder="100" style="width: 50px;">
+        </fieldset>
+        <div class="form-buttons">
+            <button type="submit" formaction="./ty.html">
+                Send
+            </button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
