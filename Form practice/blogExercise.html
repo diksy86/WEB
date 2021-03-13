@@ -1,0 +1,63 @@
+<!--Home Page content
+● Create a page with two columns
+● Width of the left column is 300px
+● Right column stretches to cover the rest of the screen
+● Left column content
+○ Logo image with height set to 250px
+○ Under the logo, there should be a list of links
+○ One of the links should be &quot;Contact&quot;
+○ The link should link to &quot;./contact.html&quot; page
+● Right column content
+● There should be two posts in form of groups
+● The first group content:
+○ Title
+○ Embedded YouTube video
+● The second group content:
+○ Title
+○ Video (HTML5) that you will find on the web
+
+Contact Page content
+● Embedded Google Map on the page
+● Link for getting back to the “Home” page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog Exercise</title>
+</head>
+<body>
+    <table width = "100%" border = "0">
+         
+        <tr>
+           <td colspan = "2">
+              <h1 style="margin-left: 60px;">My Blog</h1>
+           </td>
+        </tr>
+        <tr valign = "top">
+           <td width = "300px">
+              <img src="./coffee.png" height="250px">
+              <br>
+              <a href="./kontakt.html" style="margin-left: 100px;">Contact</a><br>
+              <a href="" style="margin-left: 100px; padding-top: 10px;">About Us</a><br>
+              <a href="" style="margin-left: 100px; margin-top: 10px;">Products</a><br>
+              <a href="" style="margin-left: 100px; margin-top: 10px;">Media</a>
+           </td>
+           
+           <td>
+              <h2 align="center">Recent posts</h2>
+              <fieldset>
+                  <legend>CoffeePedia</legend>
+                    <h1>The most famous type of coffee</h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vFcS080VYQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </fieldset>
+              <fieldset>
+                  <legend>Espresso</legend>
+                  <h1>Making Espresso</h1>
+                  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/xggpab" width="100%" height="100%" allowfullscreen > </iframe> </div>
+              </fieldset>
+           </td>
+        </tr>
+       
+        
+     </table>
+</body>
+</html>
