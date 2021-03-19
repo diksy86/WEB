@@ -1,0 +1,43 @@
+
+body {
+    background-color: white;
+}
+
+.container {
+    border: 2px solid #F3F4F6;
+    background: white;
+
+}
+
+h1 {
+    background: #448AFF;
+    margin: 0;
+}
+
+h2 {
+    padding: 5px 10px;
+    background: #448AFF;
+    text-transform: uppercase;
+}
+
+.title {
+    background-color: #448AFF;
+
+}
+
+table {
+    background: white;
+}
+
+.even {
+    background-color: #F3F4F6;
+}
+
+p#footer {
+    margin-top: 50px;
+    color: black;
+    padding: 20px 20px;
+}
+.white {
+    background-color: white;
+}
