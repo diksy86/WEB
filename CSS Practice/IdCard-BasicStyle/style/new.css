@@ -41,3 +41,9 @@ p#footer {
 .white {
     background-color: white;
 }
+img:hover {
+    transform:rotate(5deg);
+}
+img { 
+    transition: all 0.7s ease;
+}
