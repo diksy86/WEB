@@ -1,0 +1,42 @@
+.first {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.second {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+.third {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.quote1 {
+    font-family: cursive;
+}
+.quote2 {
+    font-family: fantasy;
+}
+.quote3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.first {
+    font-family: cursive;
+}
+span {
+    font-weight: bolder;
+    font-style: italic;
+}
+@font-face {
+    font-family: "MyFont";
+    src: url("./Kiwi_Maru/KiwiMaru-Light.ttf");
+}
+.first {
+    font-family: "MyFont";
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    
+}

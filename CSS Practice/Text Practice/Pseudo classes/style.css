@@ -1,0 +1,16 @@
+a {
+    color: blueviolet;
+    text-shadow: blueviolet;
+}
+a {
+    color: red;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: green;
+}
+a:active {
+    color: blue;
+}
