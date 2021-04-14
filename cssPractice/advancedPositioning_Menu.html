@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <style>
+        .container {
+            background-color: #F4F3F4;
+            max-width: 600px;
+            margin: 10px auto;
+            height: 300px;
+        }
+        ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 5px;
+        overflow: hidden;
+        background-color: #FEB503;
+        display: inline-block;
+        }
+        li {
+            float: left;
+        }
+        
+        .active {
+            background-color: #D8D8D8;
+        }
+        li a, .dropbtn {
+            display: inline-block;
+            color: #2D2D2D;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: #F5F4F5;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #2D2D2D;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }   
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Menu 2</a>
+                <div class="dropdown-content">
+                  <a href="#">Submenu 1</a>
+                  <a href="#">Submenu 2</a>
+                  <a href="#">Submenu 3</a>
+                </div>
+              </li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+    </header>
+    </div>
+</body>
+</html>

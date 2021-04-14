@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index 2 Practice</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+        .red {
+            background-color: #C1392B;
+            z-index: 1;
+            position: absolute;
+        }
+        .yellow {
+            background-color: #FEBE00;
+            z-index: 2;
+            position: relative;
+            top: 80px;
+            left: 80px;
+            
+        
+        }
+        .blue {
+            background-color: #2D3D50;
+            z-index: 3;
+            position: absolute;
+            top: 160px;
+            left: 160px;
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+</body>
+</html>
