@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        main {
+            max-width: 1200px;
+            margin: 10px auto;
+        }
+        nav {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            overflow: hidden;
+            background-color: #C8352F;
+            display: inline-block;
+            width: 100%;
+        }
+        nav li {
+            margin: 0;
+            color: white;
+            display: inline;
+            float: right;
+        }
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            
+        }
+        .page-footer {
+            background-color: #2D3D50;
+            color: white;
+            padding: 15px 0;
+            text-align: left;
+            max-width: 1200px;
+            margin-top: 30px;
+        }
+        .content {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .page-footer .content {
+            padding: 0 10px;
+        }
+        article, aside {
+            width: 320px;
+            float: left;
+            vertical-align: top;
+            padding: 10px;
+        }
+        .box {
+            height: 200px;
+            position: relative;
+            box-sizing: border-box;
+            clear: both;
+        }
+        .red {
+            background-color: #C1392B;
+        }
+        .blue {
+            background-color: #2D3D50;
+        }
+        .yellow {
+            background-color: #FEBE00;
+        }
+        .green {
+            background-color: #27AE61;
+        }
+        p {
+            max-width: 300px;
+            display: inline-block;
+            overflow: hidden;
+            line-height: 1.5;
+        }
+        aside {
+            width: 280px;
+            float: right;
+            padding-right: 0;
+            margin-top: -7px;
+        }
+        .article-links {
+            background-color: #FEBE00;
+            position: relative;
+            margin: 0;
+            padding: 25px 10px 15px 10px;
+            list-style: none;
+        
+        }
+        .article-links li {
+            margin: 0 0 5px 0;
+            padding: 0 0 5px 0;
+            border-bottom: 1px solid #2D3D50;
+            line-height: 1.5;
+        }
+        .article-links li a {
+            color: #2D3D50;
+            text-decoration: none;   
+        }
+        img {
+            width: 100%;
+        }
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+            <div class="content">
+            <img src="http://inspirevocational.com/wp-content/uploads/2015/06/505208_2307_4.jpg" alt="CSS/HTML">
+        
+            <article>
+                <div class="box red"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </article>
+            <article>
+                <div class="box blue"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </article>
+            <aside>
+                <ul class="article-links">
+                    <li><a href="#">Rebuilding slack.com</a></li>
+                    <li><a href="#">Zasto bootcamp format?</a></li>
+                    <li><a href="#">React - prozor u svet web aplikacija</a></li>
+                    <li><a href="#">Najvece zablude o <br />programerima u Srbiji</a></li>
+                </ul>
+            </aside>
+            <div class="clearfix"></div>
+            <article>
+                <div class="box yellow"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </article>
+            <article>
+                <div class="box green"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </article>
+            <article>
+                <div class="box red"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </article>
+            <div class="clearfix"></div>
+            <article>
+                <div class="box blue"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </article>
+            <article>
+                <div class="box yellow"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </article>
+            <article>
+                <div class="box green"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </article>
+            <div class="clearfix"></div>
+        </div>
+        <footer class="page-footer">
+            <div class="content">
+                @BitStudent
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
