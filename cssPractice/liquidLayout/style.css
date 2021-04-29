@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+header {
+    position: relative;
+    padding: 10px 10px 10px 140px;
+    margin-bottom: 50px;
+}
+.title h5,
+.title h1 {
+    font-weight: normal;
+    margin: 0;
+}
+.title h1 {
+    font-size: 46px;
+    margin: 15px 0;
+}
+.container {
+    
+    margin: 0 auto;
+}
+.clearfix {
+    clear: both;
+}
+header img.logo {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 100px;
+    height: 100px;   
+}
+title {
+    display: inline-block;
+    clear: right;
+    
+    
+}
+section {
+    display: block;
+    width: 45%;
+    float: left;
+    position: relative;
+    padding-right: 20px;
+}
+article {
+    display: block;
+    width: 55%;
+    float: left;
+    border-left: 2px solid black;
+    padding-left: 20px;
+}
+.about {
+    float: left;
+}
+h2 {
+    padding-left: 15px;
+    font-weight: normal;
+}
