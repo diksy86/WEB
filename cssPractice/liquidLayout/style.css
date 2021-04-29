@@ -19,7 +19,7 @@ header {
     margin: 15px 0;
 }
 .container {
-    
+    max-width: 100%;
     margin: 0 auto;
 }
 .clearfix {
