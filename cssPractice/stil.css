@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    color: #444;
+    background-color: #eee;
+}
+h1 {
+    font-size: 28px;
+    color: #66c;
+    text-align: center;
+    border-bottom: 2px #66c solid;
+}
+section {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #edc;
+    position: relative;
+    
+}
+div {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #666;
+    background-color: #ddd;
+    font-size: 9pt;
+    text-align: justify;
+}
+.pomeren {
+    background-color: rgba(255,250,210,0.8);
+    top: 30px;
+    left: 70px;
+    position: relative;
+    
+}
+.spec {
+    background-color: rgba(230,200,255,0.8);
+    top: -10px;
+    left: -100px;
+    position: absolute;
+}
+#float {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    box-sizing: border-box;
+    width: 170px;
+    height: 170px;
+    background-color: white;
+    font-size: 7pt;
+}
+table {
+    margin: 0 auto;
+    border: 2px solid black;
+    
+    text-align: center;
+    font-weight: bold;
+    border-collapse: collapse;
+    
+
+
+}
+.cel {
+    background-color: #ffc;
+    color: red;
+}
+td:hover {
+    background-color: #fcc;
+}
+td {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid black;
+}
+ol {
+    padding: 2em;
+    border: 2px dotted gray;
+}
+li {
+    background-color: #def;
+    padding: 0.5em;
+    border: 1px solid #25c;
+}
+.pod {
+    background-color: #efc;
+    padding: 0px;
+    border: 1px solid green;
+}
