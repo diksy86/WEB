@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    color: white;
+    text-align: center;
+    width: 800px;
+    margin: 50px auto;
+    padding: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    
+    
+}
+.one {
+    background-color: #FCDD9E;
+    height: 200px;
+    width: 200px;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    margin: 5px;
+}
+.two {
+    background-color: #FAAB8C;
+    height: 200px;
+    width: 200px;
+    order: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    margin: 5px;
+    
+   
+}
+.three {
+    background-color: #48464B;
+    height: 200px;
+    width: 200px;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    margin: 5px;
+    
+    
+}
+.four {
+    background-color: #C69897;
+    height: 200px;
+    width: 200px;
+    order: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    margin: 5px;
+    
+   
+}
+.five {
+    background-color: #8A838B;
+    height: 200px;
+    width: 200px;
+    order: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    margin: 5px;
+    
+    
+}
+.six {
+    background-color: #FAAB8C;
+    height: 200px;
+    width: 200px;
+    order: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    margin: 5px;
+}
+.one, .two, .three, .four, .five, .six {
+    flex-wrap: wrap;
+    align-content: space-around;
+    
+    justify-content: space-evenly;
+}
