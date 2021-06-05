@@ -1,0 +1,9 @@
+* {
+    max-width: 960px;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+    
+}

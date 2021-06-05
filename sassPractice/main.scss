@@ -1,0 +1,48 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+
+header {
+    max-width: $width;
+    margin: 0 auto;
+    border: none;
+
+    p {
+        background-color: $bgColor;
+        font-family: $fontFamily;
+        border: none;
+        
+    };
+
+    .first {
+        @include textShadow();
+        
+        
+    };
+    .red {
+        @extend .first;
+        border: 5px solid $red;
+    }
+    .second {
+        @include boxShadow();
+        
+    }
+    .blue {
+        @extend .second; 
+            border: 5px solid $blue;
+        
+    }
+    .third {
+        border: 5px solid $green;
+        
+    }
+    h1 {
+        text-align: center;
+        font-size: 2em;
+        color: $titleColor;
+    };
+}
+
+
+
+

@@ -1,0 +1,150 @@
+.colorHeader {
+  background-color: #293D4F;
+}
+
+.container-small {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 900;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Lato, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-main {
+  background-color: #20BC9C;
+}
+
+.header-main img {
+  display: block;
+  margin: 0px auto;
+}
+
+.header-main p {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  padding: 30px 10px 50px 10px;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.star, .star-white,
+.star-black {
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.star-white,
+.star-black {
+  color: #fff;
+  position: relative;
+  width: 220px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.star-white:after,
+.star-white:before,
+.star-black:after,
+.star-black:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 90px;
+  background: #fff;
+  top: 50%;
+  margin-top: -2px;
+  left: 0;
+}
+
+.star-white:after,
+.star-black:after {
+  left: auto;
+  right: 0;
+}
+
+.star-black {
+  color: black;
+}
+
+.star-black:after,
+.star-black:before {
+  background: #000;
+}
+
+.portfolio {
+  width: 80%;
+  margin: 0 auto 80px auto;
+}
+
+.portfolio img {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.about {
+  background-color: #20BC9C;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.green-send {
+  background-color: #20BC9C;
+  border-color: #20BC9C;
+}
+
+footer {
+  background-color: #293D4F;
+  color: #fff;
+  margin-top: 60px;
+}
+
+.icons {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  line-height: 40px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.footer-copyright {
+  font-size: 80%;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.footer-copyright small {
+  color: #777;
+}
+
+@media only screen and (max-width: 578px) {
+  .footer-copyright .small {
+    padding: 5px;
+  }
+  .navbar-toggler {
+    background-color: #20BC9C;
+  }
+}
+/*# sourceMappingURL=main.css.map */

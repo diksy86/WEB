@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        * {
+            margin: 0 auto;
+            max-width: 960px;
+            padding: 5px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Welcome!</h1>
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    <ul>
+        <li class="yellow">Item 1</li>
+        <li class="yellow">Item 2</li>
+        <li class="yellow">Item 3</li>
+        <li class="yellow">Item 4</li>
+        <li class="yellow">Item 5</li>
+    </ul>
+
+    <ul id="second">
+        <li class="yellow">Product 1</li>
+        <li class="yellow">Product 2</li>
+        <li class="yellow">Product 3</li>
+        <li class="yellow">Product 4</li>
+        <li class="yellow">Product 5</li>
+    </ul>
+</body>
+<footer>
+    <script>
+        function changeBackground() {
+            document.getElementById('second').style.backgroundColor = "red";
+        }
+        changeBackground();
+
+        function playWithLee() {
+            var x = document.getElementsByTagName("li");
+            for (var i = 0; i < x.length; i++) {
+            x[i].style.backgroundColor = "yellow";
+            }
+        }
+        playWithLee();
+    </script>
+</footer>
+</html>
