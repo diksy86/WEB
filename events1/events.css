@@ -1,0 +1,22 @@
+.container {
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #2D3D4F;
+    
+    
+}
+button {
+    background-color: #C1392B;
+    color: #fff;
+    padding: 15px;
+    border: none;
+
+}
+.light {
+    background-color: #F5F5F5;
+}
+.off {
+    background-color: #FEBF27;
+}
