@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test"></div>
+    <script>
+        var xhr = new XMLHttpRequest();
+
+        xhr.open('GET', 'data.json', true);
+
+        xhr.send();
+
+        xhr.onload = on_response;
+        
+        function on_response() {
+            console.log(this);
+            try {
+                var jsonObj = JSON.parse(this.responseText);
+                console.log('RESPONSE OK');
+            }
+            catch(ex) {
+                console.error("RESPONSE NOT OK!");
+                console.error(ex);
+            }
+
+            console.log("CODE WORKS!");
+        }
+
+        //data.json?foo=bar
+        $.ajax('data.json', {
+            method: 'GET',
+            async: true,
+            data: {
+                'username': input.val(),
+                'password': password.val()
+            },
+            complete: function(xhr, textStatus) {
+                if(textStatus === 'success') {
+                    //do stuff on success
+                }
+                else if(textStatus == 'error' || textStatus == 'timeout') {
+                    //do stuff on error or timeout
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>

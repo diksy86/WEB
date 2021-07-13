@@ -44,11 +44,20 @@
 
         function playWithLee() {
             var x = document.getElementsByTagName("li");
-            for (var i = 0; i < x.length; i++) {
-            x[i].style.backgroundColor = "yellow";
-            }
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.backgroundColor = "yellow";
+                    if (toUpperCase) {
+                    x[i].innerHTML = x[i].innerHTML.toUpperCase();
+                    }
+            
+                }
         }
         playWithLee();
+
+         
+
+
+
     </script>
 </footer>
 </html>

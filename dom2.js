@@ -1,6 +1,8 @@
+
+
 function alertNav() {
-    var a = document.querySelector('li');
-    a.firstChild = alert(a.firstChild.textContent);
+    var a = document.querySelector('ul');
+    a.firstElementChild = alert(a.firstElementChild.textContent);
 }
 
 function replaceText(text) {
@@ -8,17 +10,21 @@ function replaceText(text) {
     b.lastElementChild.textContent = text;
 }
 
-function myFunction() {
-    var s = document.createElement('mySelect');
-    var x = document.getElementById("mySelect");
-    var option = document.createElement("option");
-    option.text = "Kiwi";
-    x.add(option);
+function myFunction(arr, div) {
+    var myLabel = document.createElement("label");
+    var mySelect = document.createElement("select");
+        for (var i = 0; i < arr.length; i++) {
+            var myOption = document.createElement("option");
+            myOption.innerHTML = arr[i];
+            mySelect.appendChild(myOption);
+        }
+
+    var body = document.querySelector("body");
+    var node = document.createElement(div);
+    body.prepend(node);
+    node.prepend(myLabel);
+    node.appendChild(mySelect);
     
   }
-
-
-mySelect.options.add(new Option("text", "1"), mySelect.options[0]);
-
-//alertNav();
 replaceText("Promotions");
+myFunction(["Apple", "Banana", "Kiwi"], 'div');
