@@ -1,0 +1,15 @@
+.container {
+  max-width: 960px;
+}
+
+#search-form {
+  position: relative;
+}
+
+#search-dropdown {
+  position: absolute;
+  margin-top: 38px;
+  width: 100%;
+  z-index: 999;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+$content-width: 960px;
+
+.container {
+    max-width: $content-width;
+}
+#search-form {
+    position: relative;
+}
+#search-dropdown {
+    position: absolute;
+    margin-top: 38px;
+    width: 100%;
+    z-index: 999;
+}
