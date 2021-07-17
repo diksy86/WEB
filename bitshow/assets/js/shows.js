@@ -96,7 +96,6 @@ let render_show_list = () => {
 let show_info_error = function(errorThrown) {
     errorThrown = errorThrown || 'Unknown error occured';
     alert(`Couldn\'t load show: ${errorThrown}`);
-    // $('#seasons-list').html(`Error occured: ${errorThrown}`)
     render_show_list();
     
 }
