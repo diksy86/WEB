@@ -23,6 +23,32 @@ let load_show_info = (id) => {
     $('#show-info-inner').addClass('visually-hidden');
     $('#show-info-loading').removeClass('visually-hidden');
 
+    let showJSON, seasonsJSON, castJSON;
+
+    fetch(`//api.tvmaze.com/shows/${id}`)
+        .then((show) => show.json())
+        .then((show) => {
+            showJSON = show;
+            return fetch(`//api.tvmaze.com/shows/${id}/seasons`);
+        })
+        .then((seasons) => seasons.json())
+        .then((seasons) => {
+            seasonsJSON = seasons;
+            return fetch(`//api.tvmaze.com/shows/${id}/cast`);
+        })
+        .then((cast) => cast.json())
+        .then((cast) => {
+            castJSON = cast;
+            render_show_info(showJSON, seasonsJSON, castJSON);
+        })
+        .catch((error) => {
+            if(showJSON)
+                render_show_info(showJSON, seasonsJSON || [], castJSON || []);
+        
+            else 
+                show_info_error(error);
+        });
+    /*
     $.ajax({
         url: `//api.tvmaze.com/shows/${id}`,
         method: 'GET'
@@ -61,7 +87,7 @@ let load_show_info = (id) => {
         });
     }).fail((jqXHR, textStatus, errorThrown) => {
         show_info_error(errorThrown);
-    });
+    }); */
 }
 let render_show_list = () => {
     $('#shows-list').removeClass('visually-hidden');
@@ -70,6 +96,7 @@ let render_show_list = () => {
 let show_info_error = function(errorThrown) {
     errorThrown = errorThrown || 'Unknown error occured';
     alert(`Couldn\'t load show: ${errorThrown}`);
+    // $('#seasons-list').html(`Error occured: ${errorThrown}`)
     render_show_list();
     
 }
@@ -117,14 +144,24 @@ let render_show_info = (show, seasons, cast) => {
     }
 }
 let load_shows = () => {
-    $.ajax({
-        url: '//api.tvmaze.com/shows',
-        method: 'GET'
-    }).done((response) => {
-        render_shows(response);
-    }).fail((jqXHR, textStatus, errorThrown) => {
-        error_shows(errorThrown);
-    });
+    fetch('//api.tvmaze.com/shows')
+    .then((response) => response.json())
+        .then((response) => {
+            responseJSON = response;
+            render_shows(response);
+        })
+        .catch((errorThrown) => {
+            error_shows(errorThrown);
+        });
+
+    // $.ajax({
+    //     url: '//api.tvmaze.com/shows',
+    //     method: 'GET'
+    // }).done((response) => {
+    //     render_shows(response);
+    // }).fail((jqXHR, textStatus, errorThrown) => {
+    //     error_shows(errorThrown);
+    // });
 }
 
 let error_shows = (errorThrown) => {
